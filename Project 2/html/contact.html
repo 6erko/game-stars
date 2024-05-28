@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Deze website is voor de periode 2 project">
+    <meta name="author" content="Malik Omri">
+    <meta name="keywords" content="project 2, opdracht, Mbo, Rijnland, Leiden">
+    <title>Project 2</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="../js/contactPage.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <section class="Winkel_info">
+            <img class="logo_foto" src="../img/logo.png" alt="logo">
+            <section class="Zoeken">
+                <input id="searchBar" class="searchbar" type="text" placeholder="Zoeken...">
+                <a href="contact.html" id="btnSearch" class="btn-search"><i class="fa fa-search"></i></a>
+            </section>
+            <i id="winkelwagen" class="fa fa-shopping-cart"></i>
+            <i id="profiel" class='far fa-user-circle'>Inloggen</i>
+        </section>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="merchandise.html">Merchandise</a>
+            <a href="contact.html">Contact</a>
+            <a href="../php/review.php">Reviews</a>
+            <a href="../php/latest.php">Latest Reviews</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact_page">
+            <section class="contact_info">
+                <p>We horen graag van je! <br> Of je nu een vraag hebt over onze producten, wilt samenwerken, of gewoon
+                    hallo wilt zeggen, we staan voor je klaar. Neem gerust contact met ons op via de onderstaande
+                    informatie.</p><br>
+                <p><b>E-mail:</b> contact@powerups.com</p><br>
+                <p><b>Telefoon:</b> 088 - 123 4567</p><br>
+                <p><b>Postadres:</b> Beker inc., Betaplein 18, 2321 KS Leiden</p><br>
+                <p><b>Openingstijden:</b> <i>Maandag - Vrijdag: 9:00 - 17:00 uur</i></p>
+            </section>
+
+            <form class="vraag_form">
+                <h1>Vragen</h1>
+                <input class="contact_input" type="text" id="naam" placeholder="Naam" required>
+                <input class="contact_input" type="text" id="email" placeholder="Email" required>
+                <input class="contact_input" type="text" id="nummer" placeholder="Telefoonnummer" required>
+                <textarea id="vraag" rows="5" placeholder="Vul hier je vraag in"></textarea>
+                <button id="verzendBtn">Verzend</button>
+            </form>
+
+            <section class="popup" id="popup">
+                <span class="close">&#10006;</span>
+                <p>Vraag verzonden!</p>
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <img class="beeldmerk" src="../img/logo_beeldmerk.png" alt="beeldmerk">
+        <p class="Copyright_txt">© Copyright by Malik Omri, Mehmet Sezer & Hachim El Amouri 2023</p>
+        <section class="Media_icons">
+            <p>Volg ons:</p>
+            <i class="fa-brands fa-facebook fa-2xl"></i>
+            <i class="fa-brands fa-instagram fa-2xl"></i>
+            <i class="fa-brands fa-tiktok fa-2xl"></i>
+        </section>
+    </footer>
+
+</body>
+
+</html>

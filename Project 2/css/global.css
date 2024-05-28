@@ -1,0 +1,479 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Kdam Thmor Pro;
+}
+
+body {
+  background-color: #3E4E7C;
+}
+
+.Winkel_info {
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  margin-bottom: 2%;
+}
+
+.logo_foto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  margin-top: 10px;
+  margin-right: 5%;
+}
+
+.Zoeken {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20%;
+}
+
+.searchbar {
+  float: right;
+  background-color: #7194C9;
+  color: white;
+  padding: 6px 10px;
+  height: 35.4px;
+  width: 120px;
+  border: none;
+  margin-top: 1px;
+  font-family: "Segoe UI Light", "Segoe UI", "Segoe", Tahoma, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.searchbar::placeholder {
+  color: white;
+  font-family: "Segoe UI Light", "Segoe UI", "Segoe", Tahoma, Helvetica, Arial, sans-serif;
+  font-size: 16pz;
+  font-weight: bold;
+}
+
+.searchbar:focus {
+  width: 400px;
+  font-family: "Segoe UI Light", "Segoe UI", "Segoe", Tahoma, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+  border-bottom: white solid 2px;
+  outline: none;
+}
+
+.btn-search {
+  max-width: 32px;
+  cursor: pointer;
+  color: white;
+  background-color: #7194C9;
+  text-decoration: none !important;
+  font-family: "Segoe UI Light", "Segoe UI", "Segoe", Tahoma, Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  padding-top: 5px;
+}
+
+#winkelwagen {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-size: 32px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15%;
+}
+
+#profiel {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: #808CAB;
+  padding-left: 2%;
+  padding-right: 4.8%;
+  font-size: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+header>nav {
+  display: flex;
+  flex-direction: row;
+}
+
+header>nav>a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-left: 5%;
+}
+
+main {
+  display: flex;
+}
+
+#rev {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+h1 {
+  color: #fff;
+}
+
+.titel_home {
+  margin-top: 5%;
+}
+
+.eerste_rij {
+  display: block;
+}
+
+.tweede_rij {
+  position: absolute;
+  top: 60%;
+  color: white;
+  width: 100%;
+}
+
+.games_fotos {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  margin-bottom: 36vh;
+}
+
+.filter {
+  background-color: #808CAB;
+  color: white;
+  border-radius: 10px;
+  font-size: 27px;
+  width: 20%;
+  margin-right: 10%;
+  margin-bottom: 3vh;
+}
+
+.filter_title {
+  font-size: 35px !important;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.filter_box {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+  margin-bottom: 5px;
+
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  margin-right: 5px;
+  transform: scale(1.5);
+}
+
+
+.games_page {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}
+
+.games {
+  background-color: #808CAB;
+  width: 200px;
+  height: 310px;
+}
+
+.games>img {
+  padding: 10px;
+  height: 200px;
+  width: 200px;
+}
+
+.games>p {
+  color: white;
+  font-size: 10px;
+  padding: 10px;
+}
+
+.korting_foto {
+  height: 130px;
+  width: 75%;
+  position: absolute;
+  top: 70%;
+  left: 22%;
+}
+
+.foto {
+  display: flex;
+  flex-direction: row;
+  height: 170px;
+  width: 150px;
+}
+
+.actie_foto {
+  height: 150px;
+  width: 100%;
+}
+
+.product1-4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  width: 100%;
+  margin-bottom: 6vh;
+}
+
+.product5-8 {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  display: none;
+}
+
+.richting_btn {
+  border-radius: 10px;
+  margin-top: 5%;
+  width: 50px;
+  height: 300px;
+  font-size: 24px;
+  background-color: #808CAB;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.producten {
+  background-color: #808CAB;
+  width: 200px;
+  height: 450px;
+}
+
+.producten>img {
+  padding: 10px;
+  height: 200px;
+  width: 200px;
+}
+
+.producten>p {
+  color: white;
+  font-size: 10px;
+  padding: 10px;
+}
+
+.contact_page {
+  display: flex;
+  gap: 10vw;
+  margin-bottom: -5vh;
+}
+
+.contact_info {
+  margin-top: 2%;
+  color: white;
+  font-size: 20px;
+  height: 71vh;
+}
+
+
+.vraag_form {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  height: 65vh;
+  width: 65%;
+  background-color: #808CAB;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact_input,
+textarea {
+  display: block;
+  color: #808CAB;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+#verzendBtn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.popup {
+  position: fixed;
+  top: 21%;
+  left: 73%;
+  width: 250px;
+  height: 50px;
+  background-color: #7894dc;
+  display: none;
+}
+
+.popup>p {
+  color: white;
+  font-size: 25px;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #7194C9;
+  height: 10vh;
+}
+
+.beeldmerk {
+  width: 100px;
+  height: 10vh;
+  margin-right: 2%;
+}
+
+.Copyright_txt {
+  color: white;
+  margin-top: 1.5%;
+  margin-right: 40%;
+}
+
+.Media_icons {
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+.review_Page {
+  display: flex;
+  gap: 8vw;
+}
+
+.gameReview1PHP {
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+}
+
+.gameReview1Js {
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+}
+
+.gameReview2PHP {
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+}
+
+.gameReview2Js {
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+}
+
+.review_btn {
+  background-color: #808CAB;
+  color: white;
+  border-radius: 10px;
+}
+
+
+.gameReview3PHP {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vw;
+  margin-right: 25vw;
+}
+
+.gameReview3Js {
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+}
+
+.reviewForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review2_btn {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #808CAB;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.reviewMaker {
+  color: white;
+}
+
+.reviewMsg {
+  background-color: #808CAB;
+  color: white;
+  border: 1px solid #606D8C;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-container {
+  display: grid;
+  grid-column-end: 4r;
+}
+
+.review {
+  margin: 10px;
+}
+
+.slide {
+  display: none;
+}
+
+.slide:first-child {
+  display: block;
+}
